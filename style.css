@@ -27,9 +27,17 @@
 }
 
 .info-badge-title {
-    width: 450px;
-    background-color: orange;
+    top: 15px;
+    padding: 15px;
     color: white;
+}
+
+.info-bg-primary {
+    background-color: black;
+}
+
+.info-bg-secondary {
+    background-color: orange;
 }
 
 .info-badge-text {
@@ -39,6 +47,7 @@
 .info-badge-body {
     position: absolute;
     border-radius: 25px;
+    border: 1px solid black;
     z-index: -1;
     visibility: hidden;
     width: 450px;
