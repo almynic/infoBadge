@@ -1,0 +1,56 @@
+#info-sidebar-right {
+    position: fixed;
+    right: 10px;
+    width: 50px;
+    top: 150px;
+}
+
+#info-sidebar-left {
+    position: fixed;
+    left: 10px;
+    width: 50px;
+    top: 10px;
+}
+
+.info-badge {
+    float: right;
+    height: 50px;
+    display: flex;
+}
+
+.info-badge:not(:first-child) {
+    margin-top: 10px;
+}
+
+.info-badge-icon {
+    width: 50px;
+}
+
+.info-badge-title {
+    width: 450px;
+    background-color: orange;
+    color: white;
+}
+
+.info-badge-text {
+    width: 450px;
+}
+
+.info-badge-body {
+    position: absolute;
+    border-radius: 25px;
+    z-index: -1;
+    visibility: hidden;
+    width: 450px;
+    height: 170px;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-out;
+}
+
+.info-badge:hover .info-badge-body {
+    position: static;
+    z-index: 100;
+    visibility: visible;
+    opacity: 1;
+    background-color: #efefef;
+}
